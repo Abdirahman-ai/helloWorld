@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/pexels_amine_i__spir_14831828">
 
     <TextView
         android:id="@+id/introTextView"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/Abdinahmen_Intro"
-        android:text="Hello World! My name is Abdinahmen and I love building andriod applications"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Hello World! My name is Abdinahmen I am a computer science major at UMN and I love building andriod applications"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/catImageView" />
@@ -38,7 +40,21 @@
         android:text="Say Hello"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/introTextView"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pexels_bekka_mongeau_982314" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
